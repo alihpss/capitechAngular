@@ -1,0 +1,29 @@
+.login {
+    gap: 10px;
+    align-items: center;
+}
+
+.login-img {
+    width: 30px;
+}
+
+.login #lineBetween {
+    margin: 0 5px;
+}
+
+.titulo {
+    align-items: center;
+}
+
+.titulo h1 {
+    font-size: 3.5rem;
+}
+
+.img-logo {
+    width:115px;
+    margin: 0 10px;
+}
+
+div p {
+  font-size: 1.2rem;
+}
