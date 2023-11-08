@@ -1,0 +1,132 @@
+* {
+    color: #000;
+}
+
+.main {
+    min-height: 100vh;
+    /* position: relative; */
+}
+
+/* .main-items {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -20px;
+} */
+
+.main-items > div {
+    max-width: 250px;
+}
+
+.card-main {
+    max-width: 250px;
+    height: 220px;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+
+.card-main:hover {
+    transform: scale(1.05);
+}
+
+.lightBlueContainer {
+    background-color: #1EA0D1;
+}
+
+.redContainer {
+    background-color: #FB3535;
+}
+
+.purpleContainer {
+    background-color: #D376EA;
+}
+
+.brownContainer {
+    background-color: #D1AF57;
+}
+
+.card-main img {
+    margin-bottom: 15px;
+    width: 90px;
+}
+
+.card-main p {
+    margin: 0px;
+}
+
+.card-main p:last-child {
+    font-size: 22px;
+}
+
+.icon-main {
+    width: 100px;
+}
+
+.description-main img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.description-main h2 {
+    font-size: 28px;
+    width: 60%;
+}
+
+.card-description {
+    padding: 20px 20px 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    min-height: 350px;
+    background-color: #79c0f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.500);
+    transition: 0.4s ease;
+}
+
+.card-description:hover {
+    transform: scale(1.02);
+}
+
+.card-description img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.card-description p.cd-title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.card-description p {
+    font-size: 18px;
+}
+
+.about {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px 30px;
+    background-color: #D376EA;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.500);
+    font-size: 18px;
+    transition: 0.4s ease;
+}
+
+.about:hover {
+    transform: scale(1.02);
+}
+
+.about img {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+
+
