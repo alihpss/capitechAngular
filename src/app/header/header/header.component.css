@@ -31,3 +31,13 @@
 div p {
   font-size: 1.5rem;
 }
+
+@media (max-width: 450px) {
+    .titulo h1 {
+        font-size: 250%;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+}

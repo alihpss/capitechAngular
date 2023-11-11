@@ -7,3 +7,19 @@ a{
     text-decoration: none;
     color: black;
 }
+
+@media (max-width: 768px) {
+
+    .footer {
+        gap: 15px 30px;
+    }
+
+    * {
+        font-size: 14px;
+    }
+
+    .capi-img img {
+        display: none;
+    }
+
+}
