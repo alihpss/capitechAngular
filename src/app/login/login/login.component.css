@@ -73,6 +73,11 @@
     font-size: 1rem;
 }
 
+.btn-login + .btn-login {
+  background-color: rgb(55, 218, 77);
+  box-shadow: -3px 4px 0px rgb(55, 218, 77);
+}
+
 .btn-login:active {
     box-shadow: -3px 3px 0px #0c3e50;
     font-size: 0.9rem;
@@ -83,7 +88,7 @@
     .login-content {
         padding: 30px 15px;
     }
-    
+
 }
 
 
