@@ -1,0 +1,16 @@
+.btn-submit {
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #b56afb;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 4px 0 #6210af;
+    padding: 10px 60px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-submit:active {
+    box-shadow: -3px 3px 0px #6210af;
+    font-size: 0.9rem;
+}

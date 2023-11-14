@@ -55,6 +55,12 @@
     font-size: 25px;
 }
 
+.login-content h4 {
+    color: #838183;
+    font-weight: 600;
+    font-size: 18px;
+}
+
 .login-content .login-input:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
@@ -73,13 +79,18 @@
     font-size: 1rem;
 }
 
-.btn-login + .btn-login {
-  background-color: rgb(55, 218, 77);
-  box-shadow: -3px 4px 0px rgb(55, 218, 77);
+.btn-login:last-child {
+    background-color: rgb(55, 218, 77);
+    box-shadow: -3px 4px 0px rgb(35, 142, 50);
 }
 
 .btn-login:active {
     box-shadow: -3px 3px 0px #0c3e50;
+    font-size: 0.9rem;
+}
+
+.btn-login:last-child:active {
+    box-shadow: -3px 3px 0px rgb(28, 115, 39);
     font-size: 0.9rem;
 }
 

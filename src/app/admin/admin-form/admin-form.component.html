@@ -1,1 +1,95 @@
-<p>admin-form works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1>Adicionar um Curso:</h1>
+        </div>
+    </div>
+    
+    <div class="row">
+        
+        <div class="col-12">
+
+            <form (ngSubmit)="OnSubmit()">
+                <div class="row d-flex flex-column align-items-center">
+                        <!-- NOME E IMAGEM -->
+            
+                        <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                                <input type="text" class="form-control" id="course-name" name="name" placeholder="Digite o nome do curso aqui" #name="ngModel" [(ngModel)]="conteudo.name">
+                                <label for="course-name">Nome do Curso</label>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="img-path" name="imgPath" placeholder="Digite o caminho da imagem aqui." #imgPath="ngModel" [(ngModel)]="conteudo.imgPath">
+                                <label for="img-path">Caminho da imagem de apresentação</label>
+                            </div>
+                        </div>
+            
+                        <!-- CONTEÚDO -->
+            
+                        <div class="col-md-6">
+                            <hr>
+                            <h4 class="mb-4">Conteúdo:</h4>
+                        </div>
+            
+                        <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                                <input type="text" class="form-control" id="subtitle1" name="subtitle1" placeholder="Digite o nome do curso aqui" #subtitle1="ngModel" [(ngModel)]="conteudo.subtitle">
+                                <label for="subtitle1">1º Subtitulo</label>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                                <textarea class="form-control" placeholder="Digite a descrição do conteúdo aqui." id="content-description1" name="description1" style="height: 200px" #description1="ngModel" [(ngModel)]="conteudo.description"></textarea>
+                                <label for="content-description1">1º Descrição do conteúdo</label>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="references" name="references" placeholder="Digite as referências do curso aqui" #references="ngModel" [(ngModel)]="conteudo.references">
+                                <label for="references">Referências</label>
+                            </div>
+                        </div>
+            
+                        <!-- VÍDEOS -->
+            
+                        <div class="col-md-6">
+                            <hr>
+                            <h4 class="mb-4">Vídeos:</h4>
+                        </div>
+            
+                        <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                                <input type="text" class="form-control" id="video1" name="video1" placeholder="Digite o nome do curso aqui" #video1="ngModel" [(ngModel)]="conteudo.videoTitle">
+                                <label for="video1">1º Título de vídeo</label>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                                <textarea class="form-control" placeholder="Digite a descrição do conteúdo aqui." id="video-description1" name="videoDesc" style="height: 100px" #videoDesc="ngModel" [(ngModel)]="conteudo.videoDesc"></textarea>
+                                <label for="video-description1">1º Descrição do vídeo</label>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-6">
+                            <div class="form-floating mb-5">
+                                <input type="text" class="form-control" id="video1-link" name="videoLink" placeholder="Digite o link do vídeo aqui" #videoLink="ngModel" [(ngModel)]="conteudo.videoLink">
+                                <label for="video1-link">1º Link de vídeo</label>
+                            </div>
+                        </div>
+            
+                        <div class="col-12 text-center mb-5">
+                            <button class="btn-submit">Enviar dados!</button>
+                        </div>
+                
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

@@ -4,6 +4,7 @@ import { MainComponent } from './main/main/main.component';
 import { LoginComponent } from './login/login/login.component';
 import { CadastroComponent } from './login/cadastro/cadastro.component';
 import { AdministradorComponent } from './admin/administrador/administrador.component';
+import {AdminFormComponent} from './admin/admin-form/admin-form.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
     {path: 'login/entrar', component: LoginComponent},
     {path: 'login/cadastro', component: CadastroComponent},
     {path: 'admin', component: AdministradorComponent},
+    {path: 'admin/form', component: AdminFormComponent},
     {path: '', redirectTo: '/main', pathMatch: 'full'}
 ];
 
