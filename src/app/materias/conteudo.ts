@@ -1,4 +1,5 @@
 export class Conteudo {
+    'id': number;
     'name': string;
     'imgPath': string;
     'subtitle': string;
