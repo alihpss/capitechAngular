@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login/login.component';
 import { CadastroComponent } from './login/cadastro/cadastro.component';
 import { AdministradorComponent } from './admin/administrador/administrador.component';
 import { AdminFormComponent } from './admin/admin-form/admin-form.component';
+import { ConteudoComponent } from './components/conteudo/conteudo/conteudo.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AdminFormComponent } from './admin/admin-form/admin-form.component';
     LoginComponent,
     CadastroComponent,
     AdministradorComponent,
-    AdminFormComponent
+    AdminFormComponent,
+    ConteudoComponent
   ],
   imports: [
     BrowserModule,

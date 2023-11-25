@@ -6,18 +6,18 @@ import { Component } from '@angular/core';
 })
 export class AdministradorComponent {
 
-  items: {title: string, course: string, content: string}[] = [];
+  items: {id: number, title: string, course: string, content: string}[] = [];
 
   constructor(){
   }
 
   ngOnInit () {
     this.items = [
-      {title: "teste", course: "js", content: "conteudo"},
-      {title: "teste", course: "js", content: "conteudo"},
-      {title: "teste", course: "js", content: "conteudo"},
-      {title: "teste", course: "js", content: "conteudo"},
-      {title: "teste", course: "js", content: "conteudo"},
+      {id: 1, title: "teste", course: "js", content: "conteudo"},
+      {id: 2, title: "teste 2 ", course: "php", content: "conteudo teste 2"},
+      {id: 3, title: "teste 3", course: "java", content: "conteudo teste 3"},
+      {id: 4, title: "teste 4", course: "css", content: "conteudo teste 4"},
+      {id: 5, title: "teste 5", course: "c#", content: "conteudo teste 5"},
     ]
   }
 }
