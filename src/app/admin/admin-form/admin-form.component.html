@@ -15,14 +15,15 @@
             
                         <div class="col-md-6">
                             <div class="form-floating mb-4">
-                                <input type="text" class="form-control" id="course-name" name="name" placeholder="Digite o nome do curso aqui" #name="ngModel" [(ngModel)]="conteudo.name">
+                                <input type="text" class="form-control" id="course-name" name="nome" placeholder="Digite o nome do curso aqui" #nome="ngModel" [(ngModel)]="conteudo.nome">
                                 <label for="course-name">Nome do Curso</label>
                             </div>
                         </div>
             
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="img-path" name="imgPath" placeholder="Digite o caminho da imagem aqui." #imgPath="ngModel" [(ngModel)]="conteudo.imgPath">
+                                <input type="text" class="form-control" id="img-path" name="caminhoImg" placeholder="Digite o caminho da imagem aqui." #caminhoImg="ngModel" [(ngModel)]="conteudo.caminhoImg
+                                ">
                                 <label for="img-path">Caminho da imagem de apresentação</label>
                             </div>
                         </div>
@@ -36,21 +37,21 @@
             
                         <div class="col-md-6">
                             <div class="form-floating mb-4">
-                                <input type="text" class="form-control" id="subtitle1" name="subtitle1" placeholder="Digite o nome do curso aqui" #subtitle1="ngModel" [(ngModel)]="conteudo.subtitle">
+                                <input type="text" class="form-control" id="subtitle1" name="subtitulo" placeholder="Digite o nome do curso aqui" #subtitulo="ngModel" [(ngModel)]="conteudo.subtitulo">
                                 <label for="subtitle1">1º Subtitulo</label>
                             </div>
                         </div>
             
                         <div class="col-md-6">
                             <div class="form-floating mb-4">
-                                <textarea class="form-control" placeholder="Digite a descrição do conteúdo aqui." id="content-description1" name="description1" style="height: 200px" #description1="ngModel" [(ngModel)]="conteudo.description"></textarea>
+                                <textarea class="form-control" placeholder="Digite a descrição do conteúdo aqui." id="content-description1" name="descricao" style="height: 200px" #descricao="ngModel" [(ngModel)]="conteudo.descricao"></textarea>
                                 <label for="content-description1">1º Descrição do conteúdo</label>
                             </div>
                         </div>
             
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="references" name="references" placeholder="Digite as referências do curso aqui" #references="ngModel" [(ngModel)]="conteudo.references">
+                                <input type="text" class="form-control" id="references" name="referencias" placeholder="Digite as referências do curso aqui" #referencias="ngModel" [(ngModel)]="conteudo.referencias">
                                 <label for="references">Referências</label>
                             </div>
                         </div>
@@ -64,21 +65,21 @@
             
                         <div class="col-md-6">
                             <div class="form-floating mb-4">
-                                <input type="text" class="form-control" id="video1" name="video1" placeholder="Digite o nome do curso aqui" #video1="ngModel" [(ngModel)]="conteudo.videoTitle">
+                                <input type="text" class="form-control" id="video1" name="tituloVideo" placeholder="Digite o nome do curso aqui" #tituloVideo="ngModel" [(ngModel)]="conteudo.tituloVideo">
                                 <label for="video1">1º Título de vídeo</label>
                             </div>
                         </div>
             
                         <div class="col-md-6">
                             <div class="form-floating mb-4">
-                                <textarea class="form-control" placeholder="Digite a descrição do conteúdo aqui." id="video-description1" name="videoDesc" style="height: 100px" #videoDesc="ngModel" [(ngModel)]="conteudo.videoDesc"></textarea>
+                                <textarea class="form-control" placeholder="Digite a descrição do conteúdo aqui." id="video-description1" name="descricaoVideo" style="height: 100px" #descricaoVideo="ngModel" [(ngModel)]="conteudo.descricaoVideo"></textarea>
                                 <label for="video-description1">1º Descrição do vídeo</label>
                             </div>
                         </div>
             
                         <div class="col-md-6">
                             <div class="form-floating mb-5">
-                                <input type="text" class="form-control" id="video1-link" name="videoLink" placeholder="Digite o link do vídeo aqui" #videoLink="ngModel" [(ngModel)]="conteudo.videoLink">
+                                <input type="text" class="form-control" id="video1-link" name="linkVideo" placeholder="Digite o link do vídeo aqui" #linkVideo="ngModel" [(ngModel)]="conteudo.linkVideo">
                                 <label for="video1-link">1º Link de vídeo</label>
                             </div>
                         </div>

@@ -32,7 +32,7 @@ export class AdminFormComponent implements OnInit {
       observable = this.conteudoService.update(this.conteudo);
     }
     else {
-      observable = this.conteudoService.update(this.conteudo);
+      observable = this.conteudoService.insert(this.conteudo);
     }
 
     observable.subscribe(() => {

@@ -1,11 +1,11 @@
 export class Conteudo {
     'id': number;
-    'name': string;
-    'imgPath': string;
-    'subtitle': string;
-    'description': string;
-    'references': string;
-    'videoTitle': string;
-    'videoDesc': string;
-    'videoLink': string;
+    'nome': string;
+    'caminhoImg': string;
+    'subtitulo': string;
+    'descricao': string;
+    'referencias': string;
+    'tituloVideo': string;
+    'descricaoVideo': string;
+    'linkVideo': string;
 }
