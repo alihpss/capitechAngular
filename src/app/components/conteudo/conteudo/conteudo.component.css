@@ -1,13 +1,13 @@
 .editButton:hover{
-    color: #FFF !important;
+  color: #FFF !important;
 }
 
 .backImg {
-    border-radius: 10px !important;
+  border-radius: 10px !important;
 }
 
 .content {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
