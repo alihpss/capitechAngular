@@ -1,4 +1,25 @@
 <div class="d-flex align-items-center justify-content-around flex-wrap">
+    <div *ngFor="let item of items" class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex justify-content-center align-items-center px-3">
+            <img src='../../../../assets/images/ali.jpg' class="img-fluid rounded-start backImg" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Curso de: {{item.course}}</h5>
+              <p class="card-text content">{{item.content}}</p>
+              <p class="card-text"><small class="text-body-secondary">{{item.course.toUpperCase()}}</small></p>
+              <div class="d-flex gap-2 justify-content-center align-items-center mt-4">
+                  <button class="btn btn-outline-info editButton">Editar</button>
+                  <button *ngIf="item.eAdmin" class="btn btn-outline-danger">Remover</button>
+                  <a href="">Acessar conteúdo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- <div class="d-flex align-items-center justify-content-around flex-wrap">
     <div *ngFor="let conteudo of conteudos" class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4 d-flex justify-content-center align-items-center px-3">
@@ -10,21 +31,12 @@
               <p class="card-text content">{{conteudo.descricao}}</p>
               <p class="card-text"><small class="text-body-secondary">{{conteudo.nome.toUpperCase()}}</small></p>
               <div class="d-flex gap-2 justify-content-center mt-4">
-                  <button class="btn btn-outline-info editButton">Editar</button>
-                  <button class="btn btn-outline-danger">Remover</button>
+                  <button *ngIf="item.eAdmin" class="btn btn-outline-info editButton">Editar</button>
+                  <button *ngIf="item.eAdmin" class="btn btn-outline-danger">Remover</button>
                   <a href="">Ir para conteudo</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    
-    <!--<div >
-        <p></p>
-        <p></p>
-        <p></p>
-        <button>Remover</button>
-        <button>Editar</button>
-    </div>
--->
-</div>
+</div> -->
