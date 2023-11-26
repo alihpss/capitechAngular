@@ -20,25 +20,35 @@
                     Crie uma conta de Administrador caso tenha permissão!
                 </h4>
 
-                <div class="login-input">
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control login-input" id="floatingInput" placeholder="nome@email.com">
-                        <label for="floatingInput">Email</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="password" class="form-control login-input" id="floatingPassword" placeholder="Senha">
-                        <label for="floatingPassword">Senha</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="text" class="form-control login-input" id="floatingAdminPass" placeholder="Código de administrador">
-                        <label for="floatingPassword">Código de Administrador</label>
-                    </div>
-                </div>
+                <form (ngSubmit)="OnSubmit()">
+                    <div class="login-input">
 
-                <div class="login-button mt-5 mb-3 d-flex justify-content-around">
-                  <a class="btn-login" routerLink="/login/entrar">Área de login</a>
-                  <a class="btn btn-login">Registrar</a>
-              </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control login-input" id="input-nome" name="nome" placeholder="Nome" #nome="ngModel" [(ngModel)]="usuario.nome">
+                            <label for="input-nome">Nome</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control login-input" id="input-email" name="email" placeholder="nome@email.com" #email="ngModel" [(ngModel)]="usuario.email">
+                            <label for="input-email">Email</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control login-input" id="input-senha" name="senha" placeholder="Senha" #senha="ngModel" [(ngModel)]="usuario.senha">
+                            <label for="input-senha">Senha</label>
+                        </div>
+                        
+                        <div class="form-floating">
+                            <input type="text" class="form-control login-input" id="input-cod-admin" name="codAdmin" placeholder="Código de administrador">
+                            <label for="input-cod-admin">Código de Administrador</label>
+                        </div>
+                    </div>
+    
+                    <div class="login-button mt-5 mb-3 d-flex justify-content-around">
+                      <a class="btn-login" routerLink="/login/entrar">Área de login</a>
+                      <button type="submit" class="btn btn-login">Registrar</button>
+                    </div>
+                </form>
 
             </section>
         </div>

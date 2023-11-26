@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Route, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { Conteudo } from 'src/app/materias/conteudo';
-import { ConteudosService } from 'src/app/materias/conteudos.service';
+import { Conteudo } from 'src/app/services/conteudos/conteudo';
+import { ConteudosService } from 'src/app/services/conteudos/conteudos.service';
 
 @Component({
   selector: 'app-admin-form',

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Conteudo } from 'src/app/materias/conteudo';
-import { ConteudosService } from 'src/app/materias/conteudos.service';
+import { Conteudo } from 'src/app/services/conteudos/conteudo';
+import { ConteudosService } from 'src/app/services/conteudos/conteudos.service';
 
 @Component({
   selector: 'app-conteudo',

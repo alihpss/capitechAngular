@@ -67,7 +67,6 @@
     outline: 0;
 }
 
-
 .btn-login {
     background-color: #1EA0D1;
     padding: 10px 60px;
@@ -94,10 +93,15 @@
     font-size: 0.9rem;
 }
 
+@media (max-width: 530px) {
+    .login-button {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+}
 
 @media (max-width: 450px) {
     .login-content {
         padding: 30px 15px;
     }
-
 }
