@@ -18,9 +18,7 @@ export class ConteudoComponent {
   role: string = '';
 
   ngOnInit () {
-    // this.getAll();
     this.role = this.readSessionStorageValue('admin');
-    // this.setSessionStorageValue();
     this.items = [
       {id: 1, title: "teste", course: "js", content: "conteudo"},
       {id: 2, title: "teste 2 ", course: "php",content: "conteudo teste 2"},
@@ -32,9 +30,6 @@ export class ConteudoComponent {
 
   readSessionStorageValue(key: string): any {
     return sessionStorage.getItem(key);
-  }
-  setSessionStorageValue(): void {
-    return sessionStorage.setItem('admin', 'true');
   }
 
   // getAll() {
