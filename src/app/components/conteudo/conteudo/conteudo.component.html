@@ -10,9 +10,13 @@
               <p class="card-text content">{{item.content}}</p>
               <p class="card-text"><small class="text-body-secondary">{{item.course.toUpperCase()}}</small></p>
               <div class="d-flex gap-2 justify-content-center align-items-center mt-4">
-                  <button class="btn btn-outline-info editButton">Editar</button>
-                  <button *ngIf="item.eAdmin" class="btn btn-outline-danger">Remover</button>
-                  <a href="">Acessar conteúdo</a>
+                  <button *ngIf="role" class="btn btn-outline-info editButton">Editar</button>
+                  <button *ngIf="role" class="btn btn-outline-danger">Remover</button>
+                  <a href="/">
+                    <button type="button" class="btn btn-outline-dark editButton">
+                      Acessar
+                    </button>
+                  </a>
               </div>
             </div>
           </div>
@@ -31,9 +35,13 @@
               <p class="card-text content">{{conteudo.descricao}}</p>
               <p class="card-text"><small class="text-body-secondary">{{conteudo.nome.toUpperCase()}}</small></p>
               <div class="d-flex gap-2 justify-content-center mt-4">
-                  <button *ngIf="item.eAdmin" class="btn btn-outline-info editButton">Editar</button>
-                  <button *ngIf="item.eAdmin" class="btn btn-outline-danger">Remover</button>
-                  <a href="">Ir para conteudo</a>
+                  <button *ngIf="role" class="btn btn-outline-info editButton">Editar</button>
+                  <button *ngIf="role" class="btn btn-outline-danger">Remover</button>
+                  <a href="/">
+                    <button type="button" class="btn btn-outline-dark editButton">
+                      Acessar
+                    </button>
+                  </a>
               </div>
             </div>
           </div>
