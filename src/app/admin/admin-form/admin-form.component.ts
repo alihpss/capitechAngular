@@ -15,6 +15,13 @@ export class AdminFormComponent implements OnInit {
   constructor (private route: ActivatedRoute, private router: Router, private conteudoService: ConteudosService) {}
 
   ngOnInit() {
+    const adminLogado = this.readSessionStorageValue();
+
+    if(!adminLogado) {
+      this.router.navigate(["/main"]);
+      return;
+    }
+
     this.conteudo = new Conteudo();
     const id = this.route.snapshot.paramMap.get('id');
 
@@ -38,5 +45,9 @@ export class AdminFormComponent implements OnInit {
     observable.subscribe(() => {
       this.router.navigate(['/admin']);
     })
+  }
+
+  readSessionStorageValue(): any {
+    return sessionStorage.getItem("admin");
   }
 }

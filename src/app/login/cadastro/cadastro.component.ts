@@ -18,7 +18,6 @@ export class CadastroComponent {
 
   ngOnInit() {
     this.usuario = new Usuario();
-    console.log("Init: ", this.usuario)
   }
 
   OnSubmit() {
@@ -26,13 +25,13 @@ export class CadastroComponent {
     let observable: Observable<Usuario>;
     
     if (!this.codAdmin || this.codAdmin !== "admin") {
-      this.usuario.eAdmin = false;
+      // this.usuario.eAdmin = false;
 
-      observable = this.usuarioService.insert(this.usuario);
-
-      observable.subscribe(() => {
+      // observable = this.usuarioService.insert(this.usuario);
+      alert("Código de Admin inválido! Retornando para a home.")
+      // observable.subscribe(() => {
         this.router.navigate(['/main']);
-      })
+      // })
 
       return;
     }

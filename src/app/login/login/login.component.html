@@ -16,21 +16,23 @@
                     Olá, seja bem vindo ao Capi.Tech
                 </h1>
 
-                <div class="login-input">
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control login-input" id="floatingInput" placeholder="nome@email.com">
-                        <label for="floatingInput">Email</label>
+                <form (ngSubmit)="OnSubmit()">
+                    <div class="login-input">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control login-input" id="input-email" name="email" placeholder="nome@email.com" [(ngModel)]="email" autocomplete="off">
+                            <label for="input-email">Email</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control login-input" id="input-senha" name="senha" placeholder="Senha" [(ngModel)]="senha" autocomplete="off">
+                            <label for="input-senha">Senha</label>
+                        </div>
                     </div>
-                    <div class="form-floating">
-                        <input type="password" class="form-control login-input" id="floatingPassword" placeholder="Senha">
-                        <label for="floatingPassword">Senha</label>
+    
+                    <div class="login-button mt-5 mb-3 d-flex justify-content-around">
+                        <button type="submit" class="btn-login">Login</button>
+                        <a class="btn btn-login" routerLink="/login/cadastro">Registrar</a>
                     </div>
-                </div>
-
-                <div class="login-button mt-5 mb-3 d-flex justify-content-around">
-                    <a class="btn-login">Login</a>
-                    <a class="btn btn-login" routerLink="/login/cadastro">Registrar</a>
-                </div>
+                </form>
 
             </section>
         </div>

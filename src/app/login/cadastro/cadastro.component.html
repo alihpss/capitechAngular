@@ -24,22 +24,22 @@
                     <div class="login-input">
 
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control login-input" id="input-nome" name="nome" placeholder="Nome" #nome="ngModel" [(ngModel)]="usuario.nome">
+                            <input type="text" class="form-control login-input" id="input-nome" name="nome" placeholder="Nome" #nome="ngModel" [(ngModel)]="usuario.nome" autocomplete="off">
                             <label for="input-nome">Nome</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control login-input" id="input-email" name="email" placeholder="nome@email.com" #email="ngModel" [(ngModel)]="usuario.email">
+                            <input type="email" class="form-control login-input" id="input-email" name="email" placeholder="nome@email.com" #email="ngModel" [(ngModel)]="usuario.email" autocomplete="off">
                             <label for="input-email">Email</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="password" class="form-control login-input" id="input-senha" name="senha" placeholder="Senha" #senha="ngModel" [(ngModel)]="usuario.senha">
+                            <input type="password" class="form-control login-input" id="input-senha" name="senha" placeholder="Senha" #senha="ngModel" [(ngModel)]="usuario.senha" autocomplete="off">
                             <label for="input-senha">Senha</label>
                         </div>
                         
                         <div class="form-floating">
-                            <input type="text" class="form-control login-input" id="input-cod-admin" name="codAdmin" placeholder="Código de administrador" [(ngModel)]="codAdmin">
+                            <input type="text" class="form-control login-input" id="input-cod-admin" name="codAdmin" placeholder="Código de administrador" [(ngModel)]="codAdmin" autocomplete="off">
                             <label for="input-cod-admin">Código de Administrador</label>
                         </div>
                     </div>

@@ -13,6 +13,7 @@ import { CadastroComponent } from './login/cadastro/cadastro.component';
 import { AdministradorComponent } from './admin/administrador/administrador.component';
 import { AdminFormComponent } from './admin/admin-form/admin-form.component';
 import { ConteudoComponent } from './components/conteudo/conteudo/conteudo.component';
+import { PaginaConteudoComponent } from './components/paginaConteudo/pagina-conteudo/pagina-conteudo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ConteudoComponent } from './components/conteudo/conteudo/conteudo.compo
     CadastroComponent,
     AdministradorComponent,
     AdminFormComponent,
-    ConteudoComponent
+    ConteudoComponent,
+    PaginaConteudoComponent
   ],
   imports: [
     BrowserModule,

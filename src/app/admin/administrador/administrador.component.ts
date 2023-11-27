@@ -17,6 +17,7 @@ export class AdministradorComponent {
 
     if(!adminLogado) {
       this.preventRouter.navigate(["/main"])
+      return;
     }
   }
 
