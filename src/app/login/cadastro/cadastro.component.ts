@@ -18,6 +18,13 @@ export class CadastroComponent {
 
   ngOnInit() {
     this.usuario = new Usuario();
+    const id = this.route.snapshot.paramMap.get('id');
+
+    if (id) {
+      this.usuarioService.getById(parseInt(id)).subscribe(resp => {
+        this.usuario = resp;
+      })
+    }
   }
 
   OnSubmit() {
@@ -37,9 +44,16 @@ export class CadastroComponent {
     }
 
     this.usuario.eAdmin = true;
-    observable = this.usuarioService.insert(this.usuario);
 
-    this.setSessionStorageValue();
+    if (this.usuario.id) {
+      observable = this.usuarioService.update(this.usuario);
+    }
+    else {
+      observable = this.usuarioService.insert(this.usuario);
+    }
+
+    window.sessionStorage.clear(); //limpa o session storage 
+    this.setSessionStorageValue(); //adiciona novamente;
 
     observable.subscribe(() => {
       this.router.navigate(['/admin']);
@@ -50,4 +64,5 @@ export class CadastroComponent {
   setSessionStorageValue(): void {
     return sessionStorage.setItem('admin', 'true');
   }
+
 }

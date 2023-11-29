@@ -14,6 +14,7 @@ import { AdministradorComponent } from './admin/administrador/administrador.comp
 import { AdminFormComponent } from './admin/admin-form/admin-form.component';
 import { ConteudoComponent } from './components/conteudo/conteudo/conteudo.component';
 import { PaginaConteudoComponent } from './components/paginaConteudo/pagina-conteudo/pagina-conteudo.component';
+import { ListaUsuariosComponent } from './admin/lista-usuarios/lista-usuarios.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PaginaConteudoComponent } from './components/paginaConteudo/pagina-cont
     AdministradorComponent,
     AdminFormComponent,
     ConteudoComponent,
-    PaginaConteudoComponent
+    PaginaConteudoComponent,
+    ListaUsuariosComponent
   ],
   imports: [
     BrowserModule,
