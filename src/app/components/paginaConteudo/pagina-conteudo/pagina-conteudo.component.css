@@ -23,3 +23,17 @@ a:visited {
 a:hover {
     color: #006eff;
 }
+
+.content {
+    width: 95%;
+    margin: auto;
+}
+
+iframe {
+    margin: 2rem auto;
+}
+
+.courseLink {
+    color: #006eff !important;
+    margin-top: 4px;
+}

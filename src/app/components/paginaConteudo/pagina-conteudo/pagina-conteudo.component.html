@@ -1,13 +1,42 @@
-
-
-<div class="d-flex flex-column">
-    <h1 class="text-center">Curso de: </h1>
-    <div class="d-flex m-lg-4">
-        <a href="/" class="d-flex gap-3 align-items-center">
-            <img src="../../../../assets/images/Icons/arrow-right.svg" alt="">
-            <span>Voltar para conteúdos</span>
-        </a>
+<div class="containerContent container">
+    <div class="d-flex flex-column">
+        <h1 class="text-center">Curso de {{conteudo?.nome}}</h1>
+        <div class="d-flex m-lg-4">
+            <a routerLink="/main" class="d-flex gap-3 align-items-center">
+                <img src="../../../../assets/images/Icons/arrow-right.svg" alt="">
+                <span>Voltar para conteúdos</span>
+            </a>
+        </div>
+        <div id="principalImage">
+        </div>
     </div>
-    <div id="principalImage">
+    <div>
+        <h2 class="text-center mt-5 mb-5 fs-3">{{conteudo?.subtitulo}}</h2>
+
+        <div class="content">
+            <p class="text-justify">
+                {{conteudo?.descricao}}
+            </p>
+        </div>
+        
+        <h2 class="text-center mt-5 mb-5 fs-3">Referências</h2>
+        <div class="content">
+            <p class="text-justify">
+                {{conteudo?.referencias}}
+            </p>
+        </div>
+
+        <h2 class="text-center mt-5 mb-5 fs-3">Título do vídeo</h2>
+        <div class="content mb-4">
+            <p class="text-justify">
+                {{conteudo?.descricaoVideo}}
+            </p>
+            <iframe class="d-flex justify-content-center" width="560" height="315" src="{{conteudo?.linkVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <span>
+                Link do curso:
+                <a href="{{conteudo?.linkVideo}}" class="courseLink">Clique aqui!</a>
+            </span>
+        </div>
+
     </div>
 </div>
