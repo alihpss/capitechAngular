@@ -1,0 +1,25 @@
+#principalImage {
+    width: 95%;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url("../../../../assets/images/trails/algoritmos.png");
+    background-repeat: no-repeat;
+    border-radius: 6px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s all ease-in;
+}
+
+a img {
+    transform: rotate(180deg);
+}
+
+a:visited {
+    color: #000;
+}
+
+a:hover {
+    color: #006eff;
+}
