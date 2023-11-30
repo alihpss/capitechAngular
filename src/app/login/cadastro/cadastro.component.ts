@@ -23,6 +23,7 @@ export class CadastroComponent {
     if (id) {
       this.usuarioService.getById(parseInt(id)).subscribe(resp => {
         this.usuario = resp;
+        this.codAdmin = "admin";
       })
     }
   }

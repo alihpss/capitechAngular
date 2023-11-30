@@ -1,0 +1,19 @@
+.admin-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.admin-buttons a:first-child {
+    margin-right: 15px;
+}
+
+@media (max-width: 380px) {
+    .admin-buttons {
+        flex-direction: column;
+    }
+
+    .admin-buttons a:first-child {
+        margin-right: 0;
+    }
+
+}
