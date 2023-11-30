@@ -31,10 +31,10 @@
             <p class="text-justify">
                 {{conteudo?.descricaoVideo}}
             </p>
-            <iframe class="d-flex justify-content-center" width="560" height="315" src="{{conteudo?.linkVideo}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- <iframe class="d-flex justify-content-center" width="560" height="315" src={{conteudo?.linkVideo}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
             <span>
                 Link do curso:
-                <a href="{{conteudo?.linkVideo}}" class="courseLink">Clique aqui!</a>
+                <a target="_blank" href="{{conteudo?.linkVideo}}" class="courseLink">Clique aqui!</a>
             </span>
         </div>
 
