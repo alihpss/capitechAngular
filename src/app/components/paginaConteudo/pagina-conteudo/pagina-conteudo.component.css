@@ -17,7 +17,7 @@ a img {
 }
 
 a:visited {
-    color: #000;
+    color: rgb(143, 143, 254)
 }
 
 a:hover {
@@ -36,4 +36,8 @@ iframe {
 .courseLink {
     color: #006eff !important;
     margin-top: 4px;
+}
+
+.p-desc {
+    font-size: 18px;
 }

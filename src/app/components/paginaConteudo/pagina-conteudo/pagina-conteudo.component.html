@@ -1,7 +1,7 @@
 <div class="containerContent container">
     <div class="d-flex flex-column">
-        <h1 class="text-center">Curso de {{conteudo?.nome}}</h1>
-        <div class="d-flex m-lg-4">
+        <h1 class="text-center mb-4">Curso de {{conteudo?.nome}}:</h1>
+        <div class="d-flex m-lg-4 mb-3">
             <a routerLink="/main" class="d-flex gap-3 align-items-center">
                 <img src="../../../../assets/images/Icons/arrow-right.svg" alt="">
                 <span>Voltar para conteúdos</span>
@@ -11,22 +11,23 @@
         </div>
     </div>
     <div>
-        <h2 class="text-center mt-5 mb-5 fs-3">{{conteudo?.subtitulo}}</h2>
+        <h2 class="text-center mt-5 mb-5 fs-3">{{conteudo?.subtitulo}}:</h2>
 
         <div class="content">
-            <p class="text-justify">
+            <p class="text-justify p-desc">
                 {{conteudo?.descricao}}
             </p>
         </div>
         
-        <h2 class="text-center mt-5 mb-5 fs-3">Referências</h2>
-        <div class="content">
-            <p class="text-justify">
+        <h2 class="text-center mt-5 mb-5 fs-3">Saiba mais sobre {{conteudo?.nome}}</h2>
+        <div class="content text-center">
+            <!-- <p class="text-justify">
                 {{conteudo?.referencias}}
-            </p>
+            </p> -->
+            <a class="link-referencias" target="_blank" href={{conteudo?.referencias}}>Clique aqui para ver mais sobre {{conteudo?.nome}}</a>
         </div>
 
-        <h2 class="text-center mt-5 mb-5 fs-3">Título do vídeo</h2>
+        <h2 class="text-center mt-5 mb-5 fs-3">{{conteudo?.tituloVideo}}</h2>
         <div class="content mb-4">
             <p class="text-justify">
                 {{conteudo?.descricaoVideo}}

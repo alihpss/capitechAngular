@@ -16,7 +16,8 @@ export class AdministradorComponent {
     const adminLogado = this.readSessionStorageValue();
 
     if(!adminLogado) {
-      this.preventRouter.navigate(["/main"])
+      this.preventRouter.navigate(["/main"]);
+      window.alert("Você deve realizar login antes de entrar na área do admin.");
       return;
     }
   }
